@@ -17,7 +17,7 @@ export default function Home() {
   }, [chatLog]);
   async function fetchResponse() {
     setIsLoading(true);
-    const response = await fetch("http://localhost:3000/api/chatgpt", {
+    const response = await fetch("https://chat-gpt-clone-zeta-inky.vercel.app/api/chatgpt", {
       method: "POST",
       headers: {
         "content-type": "application/json",
